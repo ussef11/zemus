@@ -1,0 +1,404 @@
+
+
+
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .articlesfav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .features {
+    margin-top: 20px;
+    /* height: 37%; */
+    /* margin-left: 13%; */
+    display: grid;
+    grid-template-columns: 8fr 4.5fr 4.5fr;
+    /* max-width: 78%; */
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  .features1 {
+    margin-top: 20px;
+    /* height: 37%; */
+    /* margin-left: 13%; */
+    display: grid;
+    grid-template-columns:  4.5fr 4.5fr 8fr;
+    /* max-width: 78%; */
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .featuresfav {
+  
+    margin-top: 20px;
+    height: 37%;
+    /* margin-left: 13%; */
+    display: grid;
+    /* grid-template-columns: 8fr 4.5fr 4.5fr; */
+    /* max-width: 78%; */
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .item {
+
+    /* width: 69vh; */
+    /* margin-left: 92px; */
+    /* display: flex; */
+    flex-direction: column;
+
+    background-image: linear-gradient(to right bottom, #dee2e6, #dbdbdb);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.507);
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.3s;
+    height: 311px;
+    position: relative;
+  }
+
+  .itemfav {
+
+    display: flex;
+    cursor: pointer;
+    background-image: linear-gradient(to right bottom, #ffffff, #ffffff);
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.3s;
+   
+  }
+
+  .item:hover {
+    transform: translateY(-1.1rem);
+  }
+  /* .itemfav:hover {
+    transform: translateY(-1rem);
+  } */
+
+  .item-photo {
+    width: 100%;
+    align-self: center;
+    height: 180px;
+   
+
+  }
+  .item-photofav {
+    width: 92%;
+    align-self: center;
+    height: 178px;
+    border-radius: 30px;
+
+  }
+  .favphoto{
+    
+    align-self: center;
+    height: 217px;
+    border-radius: 30px;
+
+  }
+
+  .item-headerfav {
+    margin-top: 21px;
+  }
+
+  .item-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .item-title {
+    text-align: left;
+    font-size: 19px;
+    font-weight: 900;
+    margin-top: 1px;
+    /* margin-left: -150px; */
+    font-family: sans-serif;
+    margin-left: 15px;
+  }
+
+  .item-titlefav {
+    text-align: left;
+    font-size: 21px;
+    font-weight: 900;
+    margin-top: 1px;
+ 
+    font-family: sans-serif;
+  
+  }
+
+  .item-text {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+    margin-top: -17px;
+    margin-left: 16px;
+  }
+  .item-textfav {
+    text-align: left;
+  
+    font-family: sans-serif;
+    margin-top: -16px;
+    font-size: 13px;
+    font-weight: 600;  
+  }
+
+  .item-link:link,
+  .item-link:visited {
+    display: inline-block;
+    font-size: 1.6rem;
+
+    padding: 1.6rem 2.4rem;
+    text-decoration: underline #099268;
+    color: #099268;
+
+    /* stick link to the bottom of item */
+    margin-top: auto;
+  }
+
+  .item-link:hover,
+  .item-link:active {
+    color: #3aa886;
+    text-decoration: underline #3aa886;
+  }
+
+  /* TABLETS */
+  @media (max-width: 950px) {
+ 
+
+    .features {
+      grid-template-columns: 1fr 1fr;
+      max-width: 60rem;
+    }
+    .features1 {
+      grid-template-columns: 1fr 1fr;
+      max-width: 60rem;
+    }
+
+    .item1 {
+      grid-column: span 2;
+    }
+
+    .item-title {
+      font-size: 3rem;
+    }
+
+    .item-text {
+      font-size: 2rem;
+    }
+
+    .item-link:link,
+    .item-link:visited {
+      font-size: 2rem;
+    }
+  }
+
+  /* MOBILES */
+  @media (max-width: 650px) {
+    .features {
+      grid-template-columns: 1fr;
+      max-width: 30rem;
+    }
+    .features1 {
+      grid-template-columns: 1fr;
+      max-width: 30rem;
+    }
+
+    .item1 {
+      grid-column: span 1;
+    }
+
+
+  }
+
+  .imgdiv{
+    margin-left: 20px;
+   
+    height: 25px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+  }
+  .imgdivfav{
+
+   
+    height: 28px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+  }
+  .imgdiv  img{
+  
+    border-radius: 10px;
+  
+  }
+  .imgdivfav  img{
+  
+    width: 35px;
+  
+  }
+  .imgdiv p{
+    margin-left: 9px;
+    position: relative;
+    top: -7px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .imgdivfav p{
+    margin-left: 8px;
+    margin-top: 7px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+.titleDiv  span{
+  position: relative;
+  top: 15px;
+  margin-right: 5px;
+  font-size: 38px;
+  color: green;
+}
+.titleDiv  h1{
+  color: green;
+  font-size: 25px;}
+
+  
+  .arttfav{
+    width: 80%;
+    /* margin-left: 21px; */
+  }
+
+  .favicon{
+      
+      place-items: center;
+    
+  
+      display: grid;
+  }
+  .favicon img{
+    height: 36px;
+    width: 58px;
+  }
+
+  
+  .titleDivfav{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+  }
+  .titleDivfav button{
+    border: none;
+    padding: 13px;
+    color: white;
+    background-color: #188cff;
+    /* height: 45px; */
+    font-size: 18px;
+    /* width: 119%; */
+    border-radius: 47px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: inherit;}
+
+
+    .popup {
+      position: fixed;
+      top: 58%;
+      left: 59%;
+      transform: translate(-50%, -50%);
+      background-color: #00a9c1;
+  
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 99vh;
+      /* height: 73vh; */
+    }
+    .headtitle{
+      padding-left: 27px;
+      width: 100%;
+      background-color: #008EB5;
+      display: flex;
+      padding-right: 27px;
+    }
+    .headtitle h1{
+      color: white;
+    }
+    .headtitle span{
+      cursor: pointer;
+      position: relative;
+      margin-right: 0;
+      margin-left: auto;
+      top: 20px;
+      font-size: 36px;
+      font-weight: 900;
+    }
+
+
+
+    
+
+    .Message{
+      margin: 24px;
+    }
+    .MsgInput::placeholder {
+      color: #ffff; /* Your desired placeholder color */
+    }
+    .MsgInput {
+      width: 100%;
+      height: 73px;
+      font-size: 18px;
+      border-radius: 10px;
+      background-color: #008EB5;
+      border: none;
+      outline: none;
+      transform: translate(5px,-3px);
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .actiondiv{
+      display: grid;
+    }
+    
+    .actiondiv input{
+      height: 38px;
+      width: 24px;
+      position: relative;
+      top: 59px;
+      left: 4px;
+    }
+    
+    .actiondiv span{
+      font-size: 40px;
+    }
+    
+
+    .socialicons{
+      display: grid;
+      height: 0;
+      position: relative;
+      left: -56px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .blur-background {
+      backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
+      pointer-events: none; /* Prevents the blurred overlay from capturing events */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* z-index: 9999; Ensure the blur overlay is above other elements */
+    }

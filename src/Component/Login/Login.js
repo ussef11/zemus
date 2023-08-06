@@ -239,7 +239,7 @@ useEffect(()=>{
               </span>
             )}
 
-            <button style={{background:"#009AAD" ,  borderColor:"#009AAD"}}onClick={handleChangepass}>S’inscrire</button>
+            <button style={{background:"#009AAD" ,  borderColor:"#009AAD"}} onClick={handleChangepass}>S’inscrire</button>
             <button  style={{marginTop:"8px" , color:"black"}} onClick={handleSignIn}>S’abonner</button>
           </form>
         </div>

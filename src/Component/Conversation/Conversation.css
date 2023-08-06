@@ -1,0 +1,167 @@
+.avatar{
+    width: 91px;
+    height: 90px;
+    border-radius: 62px;
+    border: 2px solid #AAA;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+.headconv{
+    margin-left: 29px;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+}
+.headconv h2{
+    margin: 0;
+    font-size: 34px;
+    margin-top: 14px;
+}
+
+.onlineinfo{
+    margin-left: 19px;
+   
+}
+
+.headconv span{
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: green !important;
+    margin-left: 4px;
+
+}
+
+.actiioncall{
+    display: flex;
+    margin-left: auto;
+    margin-right: 28p
+}
+.actiioncall img{
+    width: 38px;
+    margin-right: 22px;
+    
+}
+
+.cnv1{
+    margin-bottom: 15px;
+    background-color: #008EB5;
+    padding: 10px;
+    width: 35%;
+    border-top-right-radius: 33px;
+    border-top-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    margin-left: 21px;
+}
+.cnv1 p{
+    color: white;
+    line-height: 21px;
+    padding: 9px;
+}
+.cnv1 span{
+    margin-left: 86%;
+    color: white;
+    font-weight: 600;
+ 
+}
+.cnv2 span{
+    margin-left: 86%;
+    color: white;
+    font-weight: 600;
+ 
+}
+
+.cnv2{
+    margin-bottom: 15px;
+    background-color: #008EB5;
+    padding: 10px;
+    width: 35%;
+    border-top-right-radius: 33px;
+    border-top-left-radius: 33px;
+    border-bottom-left-radius: 33px;
+   
+    margin-left: auto;
+    margin-right: 11px;
+}
+
+.cnv2 p{
+    color: white;
+    line-height: 21px;
+    padding: 9px;
+}
+
+.sentmsg{
+    margin-top: 12px;
+    width: 90%;
+    height: 58px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #008EB5;
+    border: none;
+    outline: none;
+    transform: translate(5px,-3px);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.inpsnet{
+    background-color: #008EB5;
+    /* margin-bottom: 17px; */
+    border-radius: 45px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.imgsent{
+    margin-top: 10px;
+    width: 55px;
+    height: 56px;
+    border-radius: 30px;
+    border: 2px solid #AAA;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
+  .sentmsg::placeholder {
+    color: #ffff; /* Your desired placeholder color */
+  }
+.sentbtn{
+    border: none;
+    width: 26px;
+    height: 28px;
+    margin-top: 20px;
+    margin-left: 2px;
+
+}
+
+.optmsg{
+ 
+    margin-left: 56%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: #008EB5;
+    padding: 10px;
+    border-radius: 20px;
+    height: 127px;
+}
+
+.optmsg p{
+    cursor: pointer;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+}
+
+.allmsgs{
+    height: 72vh;
+    overflow: auto;
+}

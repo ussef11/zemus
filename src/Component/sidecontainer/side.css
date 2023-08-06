@@ -1,0 +1,146 @@
+.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root{
+    margin-left: 35px !important;
+}
+
+.css-10hburv-MuiTypography-root{
+    font-size: auto !important;
+    /* 
+   
+    font-family: auto !important;;
+    font-weight: 600!important;;
+  
+    letter-spacing: 0em !important; */
+
+}
+
+.css-i7rae6-MuiList-root{
+    /* height: 100vh !important; */
+    background-color: #ebebeb!important;
+    max-width: 371px!important;
+}
+
+.css-uob957-MuiListSubheader-root{
+    background-color: #ebebeb!important;
+}
+
+.spanacc{
+    /* font-size: 20px; */
+    font-weight: 500;
+}
+
+.title{
+    font-size: 19px;
+    font-weight: 700;
+    /* margin-left: 34px; */
+    margin-bottom: 3px;
+    color: green;
+}
+.css-cveggr-MuiListItemIcon-root{
+    
+    min-width: 33px!important;
+
+}
+
+.ff{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px;
+    color: green;
+}
+
+
+
+.spblack{
+    color: black;
+}
+
+.ff .material-symbols-outlined{
+    position: relative;
+    top: 5px;
+}
+.logo{
+    width: 162px;
+    margin-top: 17px;
+    margin-left: 35px;
+}
+
+
+#friend-list { 
+  cursor: pointer;
+    list-style-type: none;
+  }
+  
+  .friendsent {
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .friendsent img {
+    margin-top: 15px;
+    width: 55px;
+    height: 56px;
+    border-radius: 30px;
+    border: 2px solid #AAA;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  
+  .friendsent .name {
+    font-size: 18px;
+  }
+
+  .name p{
+    margin-bottom: 3px;
+    margin-left: 6px;
+  }
+  
+  .name button{
+    height: 28px;
+    border: none;
+  /* height: 45px; */
+  font-size: 15px;
+  /* width: 119%; */
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: sans-serif;
+  text-transform: inherit;
+  width: 113px
+  }
+  
+  .name .btnconferm{
+    margin-right: 9px;
+    color: white;
+    background-color: #188cff;
+  
+  }
+  
+  .name .btnsupp{
+  
+    color: black;
+    background-color: white;
+  
+  }
+  
+
+  .voir{
+    color: green;
+    font-size: 18px;
+    margin-left: 9px;
+    font-weight: 700;
+    margin-left: 24px;
+  }
+
+  .imgicon{
+    width: 25px;
+    height: 23px;
+    position: relative;
+    margin-right: 5px;
+    top: -3px;
+  }
+
+  .listamisdiv{
+    overflow: auto;
+    max-height: 42vh;
+  }

@@ -1,0 +1,164 @@
+.Valider{
+    /* text-align: center; */
+    height: 39px;
+    border: none;
+    /* height: 45px; */
+    font-size: 18px;
+    /* width: 119%; */
+    border-radius: 19px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: inherit;
+    width: 113px;
+    /* margin-right: 9px; */
+    color: white;
+    background-color: #188cff;
+    margin-left: 40px;
+}
+
+.themadiv{
+        /* margin-top: 20px; */
+    /* height: 37%; */
+    /* margin-left: 13%; */
+    display: grid;
+    grid-template-columns: 0fr 1.5fr;
+    /* max-width: 78%; */
+   
+}
+
+
+.source{
+ 
+    
+    margin-left: 22px;
+    border-radius: 26px;
+    background-color: #eeeeee;
+  
+    width: 20%;
+}
+
+.thematcontainer{
+    margin-left: 22px;
+    border-radius: 26px;
+    background-color: #eeeeee;
+    padding: 20px;
+    width: 40%;
+}
+
+.thematcontainer h1{
+margin: 0;
+}
+
+.category-list{
+    margin-top: -7px;
+}
+.category-list img{
+    width: 22px !important;
+     height: 21px!important;
+    position: relative;
+    top: 4px;
+}
+.thema img{
+    width: 27px;
+    height: 31px;
+}
+.category-list li{
+      margin: 0;
+      font-weight: 500;
+      color: #008EB5;
+}
+.category-list ul{
+    margin-top: -7px;
+}
+
+.thema {
+    width: 251px;
+}
+
+
+.source-list li{
+    margin: 1rem 0;
+    font-weight: 700;
+    color: #008EB5;
+    font-size: 21px;
+}
+
+.source h2{
+    margin-left: 25px;
+}
+
+.source-list img{
+    width: 22px !important;
+    height: 21px!important;
+    position: relative;
+    top: 4px;
+}
+
+
+.reca-container{
+
+display: grid;
+
+column-gap: 39px;
+row-gap: 1rem;
+}
+
+.recaflex{
+    display: flex;
+    margin-left: 13px;
+    border-radius: 26px;
+    background-color: #eeeeee;
+    margin-bottom: 15px;
+}
+.recaflex img{
+    width: 33px;
+}
+.recaflex ul{
+    margin: 0;
+
+}
+.recaflex li{
+    color: #008EB5;
+
+}
+
+.contryname{
+    margin: 0;
+    font-weight: 600;
+    font-size: 25px;
+  }
+.subname{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+  }
+.recaflex p:nth-child(2){
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.recaflex p:nth-child(3){
+    margin: 0;
+    font-weight: 600;
+    font-size: 23px;
+  }
+
+
+  .imgz{
+    align-items: center;
+    display: flex;
+    margin-right: 14px;
+    margin-left: 12px;
+  }
+  .infocontry{
+    margin-top: 15px;
+    margin-bottom: 14px;
+
+  }
+
+  .sourcecontan h1{
+    color: #008EB5;
+    font-size: 28px;
+    margin-left: 19px;
+  }

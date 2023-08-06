@@ -1,0 +1,104 @@
+.listprofmg{
+    display: flex;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,142,181,1) 0%, rgba(2,142,181,0.5663515406162465) 0%, rgba(2,142,181,0.7120098039215687) 0%, rgba(87,226,255,0.4290966386554622) 0%, rgba(0,212,255,0.6055672268907564) 0%, rgba(0,212,255,0.5243347338935574) 0%, rgba(0,208,250,0.3842787114845938) 53%, rgba(0,212,254,0.26943277310924374) 72%);
+    height: 122px;
+    width: 85%;
+    border-radius: 21px;}
+
+.listprofmgi {
+    width: 91px;
+    height: 90px;
+    border-radius: 62px;
+    border: 2px solid #AAA;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.imgcancelmsg{
+    border: none !important;
+    width: 25px!important;
+    height: 26px!important;
+    cursor: pointer;
+    position: relative!important;
+    margin-left: 55px!important;
+}
+
+.Listmsg{
+    justify-content: center;
+    display: flex;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.msgtxt{
+    align-items: center;
+    margin-left: 73px;
+    background-color: white;
+    height: 93px;
+    border-radius: 21px;
+    width: 63%;
+    display: flex;
+}
+
+.infofriendspanmsg{    position: relative !important;
+    top: -14px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: green !important;
+   
+}
+
+.txtt{
+    margin-left: 21px
+}
+
+
+.vu{
+    display: flex;
+    margin-left: auto;
+}
+.vu h1{
+    color: #C0C0C0;
+    font-size: 26px;
+    font-family: system-ui;
+    font-weight: 500;
+    margin: 0;
+}
+
+.vu img{
+    width: 45px;
+    height: 38px;
+    border-radius: 62px;
+    /* border: 2px solid #AAA; */
+    object-fit: cover;
+    margin-left: 22px;
+    margin-right: 10px;
+}
+
+.vu p{
+    color: #C0C0C0;
+    font-size: 26px;
+    font-family: system-ui;
+    font-weight: 500;
+    margin: 0;
+}
+
+.txtt p {
+    
+    font-size: 23px;
+    font-weight: 600;
+    color: #C0C0C0;
+    margin-bottom: 14px;
+
+}
+
+.infofriendspanmsg span{
+    position: relative !important;
+    top: -14px !important;
+    font-size: 15px !important;
+    /* font-weight: 700 !important; */
+    color: green !important;
+}

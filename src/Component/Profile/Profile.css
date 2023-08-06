@@ -1,0 +1,209 @@
+.profnameprof h2{
+    margin: 0;
+    font-size: 29px;
+}
+
+.profnameprof img {
+    width: 167px;
+    height: 160px;
+    border-radius: 108px;
+    border: 2px solid #AAA;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.btnpremm{
+    padding: 0 15px;
+    background: #ffe500;
+    height: 32px;
+    border-radius: 20px;
+    border-color: #ffe50000;
+    font-size: 14px;
+    font-family: system-ui;
+    font-weight: 500;
+    margin-top: 9px;
+}
+.publication{
+ 
+    padding: 22px;
+    margin-bottom: 14px;
+
+    background-color: #eeeaea;
+    border-radius: 29px;
+}
+.publication h4{
+ 
+    background-color: #008EB5;
+    position: relative;
+    height: 0;
+    margin: 0;
+    top: 8px;
+    left: 13px;
+    color: #008EB5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.publications h1{    color: #008EB5;
+    font-size: 28px;
+    
+}
+
+.publications {
+    width: 29%;
+}
+.publications2 h1{    color: #008EB5;
+    font-size: 28px;
+    
+}
+
+.publications2 {
+    margin-left: 57px;
+    margin-bottom: 14px;   
+     width: 36%;
+}
+
+
+.item-photoProf{
+    width: 100%;
+    height: 178px;
+    border-radius: 30px;
+}
+
+.publication h3{
+    margin-top: 7px;
+    margin-bottom: -2px;
+}
+
+.publication p{
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 600
+}
+
+.allPub{
+
+display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;400;600;700&display=swap");
+
+
+:root {
+	--primary: #ae7efe;
+	--outdark: #573f7f;
+	--white: #f9f9f9;
+}
+
+
+.timeline {
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	background-color: var(--white);
+	top: 0;
+	bottom: 0;
+	left: 50%;
+}
+.container {
+	padding: -2px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    
+    margin-left: 3px;
+    margin-right: -69px;
+    
+}
+.container::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 11px;
+    right: -17px;
+    background-color: #040404;
+    border: solid 2px #000000;
+    top: 15px;
+    /* border-radius: 50%; */
+    z-index: 1
+}
+.left {
+	left: 0;
+}
+.right {
+	left: 50%;
+}
+.left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid var(--white);
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent var(--white);
+}
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid var(--white);
+	border-width: 10px 10px 10px 0;
+	border-color: transparent var(--white) transparent transparent;
+}
+.right::after {
+	left: -12px;
+}
+.content {
+	/* padding: 20px 30px;
+	background-color: var(--white);
+	position: relative;
+	border-radius: 8px; */
+}
+
+@media screen and (max-width: 600px) {
+	.timeline::after {
+		left: 31px;
+	}
+	.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+	.container::before {
+		left: 60px;
+		border: medium solid var(--white);
+		border-width: 10px 10px 10px 0;
+		border-color: transparent var(--white) transparent transparent;
+	}
+	.left::after,
+	.right::after {
+		left: 15px;
+	}
+	.right {
+		left: 0%;
+	}
+}
