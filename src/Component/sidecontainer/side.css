@@ -144,3 +144,7 @@
     overflow: auto;
     max-height: 42vh;
   }
+
+  .css-uob957-MuiListSubheader-root{
+    position: initial !important;
+  }

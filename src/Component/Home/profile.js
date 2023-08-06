@@ -153,7 +153,7 @@ export const Profile = () => {
 
   return (
  <>  
- {  Fil !== "amis" && Fil  !== "suivis" && Fil !== "msg" ?  <div> 
+ {  Fil !== "amis" && Fil  !== "suivis" && Fil !== "msg" && Fil !== "Publication" ?  <div> 
     <div style={{ display: "flex" }} className="profile">
       <div className="icon">
         <Stack direction="row" spacing={2}>

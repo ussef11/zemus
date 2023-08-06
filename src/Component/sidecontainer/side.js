@@ -121,7 +121,7 @@ const Side = () => {
       </ListItemButton>
 
       {
-        Fil !== "amis" && Fil !== "suivis" && Fil !== "msg"  && Fil !== "friendmsg" && Fil !== "conv"? (
+        Fil !== "amis" && Fil !== "suivis" && Fil !== "msg"  && Fil !== "friendmsg" && Fil !== "conv" && Fil !== "profile" ? (
           <>
             {" "}
             <ListItemButton x={{ marginLeft: "35px", marginBottom: "-8px" }}>
@@ -276,7 +276,7 @@ const Side = () => {
             </Collapse>{" "}
           </>
         ) : (
-          <>  
+          <>    {   Fil !== "profile"  ?   <> 
                 <div className="serach">
         <Paper
           component="form"
@@ -309,6 +309,8 @@ const Side = () => {
         <p className="voir">Voir les invitations envoyeés:
 </p>
       </div>
+
+      
 <div className="listamisdiv">
           <ul id="friend-list"  onClick={()=>{SetFil("friendmsg")}}>
             <li className="friendsent">
@@ -410,10 +412,10 @@ const Side = () => {
             </li>
           </ul>
           </div> 
-          </>
+          </> : null} </>
         )
 
-        // </ul>
+        
       }
     </List>
   );

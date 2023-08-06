@@ -11,9 +11,11 @@ import Message from "../Message/Message";
 import Listmsg from "../Listmsg/Listmsg";
 import Conversation from "../Conversation/Conversation";
 import Profil from "../Profile/Profile";
+import Publication from "../Publication/Publication";
 const Home = () => {
   const [Fil, SetFil] = useState();
   const [selection, setselection] = useState(false);
+  const [publicationID , setPublicationID] = useState(false)
 
   return (
     <Context.Provider
@@ -22,6 +24,9 @@ const Home = () => {
         SetFil,
         selection,
         setselection,
+        publicationID,
+        setPublicationID
+
       }}
     >
       <div
@@ -49,7 +54,9 @@ const Home = () => {
                 Fil === "conv" ?
                 <Conversation/>:
                 Fil === "profile" ?
-                <Profil/> :
+                <Profil/> : 
+                Fil === "Publication"?
+                <Publication/> :
                 <Articles />
               }
             </div>

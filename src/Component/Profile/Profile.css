@@ -25,7 +25,7 @@
     margin-top: 9px;
 }
 .publication{
- 
+   cursor: pointer;
     padding: 22px;
     margin-bottom: 14px;
 
@@ -104,19 +104,19 @@ display: flex;
 :root {
 	--primary: #ae7efe;
 	--outdark: #573f7f;
-	--white: #f9f9f9;
+	--white: #09ff7c;
 }
 
 
 .timeline {
 	position: relative;
-	max-width: 960px;
+	/* max-width: 960px; */
 	margin: 0 auto;
 }
 .timeline::after {
 	content: "";
 	position: absolute;
-	width: 6px;
+	width: 3px;
 	background-color: var(--white);
 	top: 0;
 	bottom: 0;
@@ -133,16 +133,18 @@ display: flex;
     
 }
 .container::after {
+    border-radius: 4px;
     content: "";
     position: absolute;
-    width: 26px;
-    height: 11px;
-    right: -17px;
+    width: 12px;
+    height: 9px;
+    right: -8px;
     background-color: #040404;
-    border: solid 2px #000000;
-    top: 15px;
+    border: solid 4px #ffffff;
+    top: 16px;
     /* border-radius: 50%; */
-    z-index: 1
+    z-index: 1;
+
 }
 .left {
 	left: 0;
@@ -150,7 +152,7 @@ display: flex;
 .right {
 	left: 50%;
 }
-.left::before {
+/* .left::before {
 	content: " ";
 	height: 0;
 	position: absolute;
@@ -161,7 +163,7 @@ display: flex;
 	border: medium solid var(--white);
 	border-width: 10px 0 10px 10px;
 	border-color: transparent transparent transparent var(--white);
-}
+} */
 .right::before {
 	content: " ";
 	height: 0;
@@ -178,10 +180,9 @@ display: flex;
 	left: -12px;
 }
 .content {
-	/* padding: 20px 30px;
-	background-color: var(--white);
-	position: relative;
-	border-radius: 8px; */
+    margin-left: -77px;
+    position: relative;
+    top: 18px;
 }
 
 @media screen and (max-width: 600px) {
@@ -206,4 +207,37 @@ display: flex;
 	.right {
 		left: 0%;
 	}
+}
+
+.content h2{
+    font-size: 14px;
+}
+
+
+.ddd{
+    height: 8%;
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #008EB5;
+    top: 31px;
+    bottom: 0;
+    left: 50%;
+    /* position: relative; */
+    left: -95px;
+    border-radius: 20px;}
+
+.profileContainer{
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+.profilli{
+    height: 19px;
+    background-color: aliceblue;
+    margin-bottom: 9px;
+}
+
+.profilli{
+    font-size: 13px;
 }
