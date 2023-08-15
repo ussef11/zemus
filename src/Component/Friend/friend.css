@@ -51,7 +51,7 @@
 }
 
 .friendcontainer h1 {
-  color: green;
+  color: #02b3e3 ;
   font-size: 22px;
   margin-left: 9px;
   position: relative;
@@ -132,11 +132,11 @@
 .friendseg span {
   font-size: 15px !important;
   font-weight: 700 !important;
-  color: green !important;
+  color: #02b3e3  !important;
 }
 
 
-.h2seg{    color: green;
+.h2seg{    color: #02b3e3 ;
   font-size: 27px;
   margin-left: 9px;}
 
