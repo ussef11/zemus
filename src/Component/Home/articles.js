@@ -1,9 +1,11 @@
 import React from 'react'
 import "./articles.css"
+import etoille from "../../media/star.png"
+import Noetoille from "../../media/startred.png"
 const Articles = () => {
   return (
     <section className="articles">
-   <div className='titleDiv' style={{display:"flex"}}>   <span class="material-symbols-outlined">star </span>   <h1>Risques écologiques - Australie</h1> </div>
+   <div className='titleDiv' style={{display:"flex" , alignItems:"center"}}> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>    <h1>Risques écologiques - Australie</h1> </div>
       <div className="features">
         <div className="item item1">
           <div> 
@@ -18,7 +20,7 @@ const Articles = () => {
             <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon className="item-icon" name="bulb-outline"></ion-icon>
             <h3 className="item-title">Brilliant feature</h3>
@@ -40,7 +42,7 @@ nitatib usciet la consequ iatione
           <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon className="item-icon" name="wallet-outline"></ion-icon>
             <h3 className="item-title">Cheap drones</h3>
@@ -61,7 +63,7 @@ nitatib usciet
           <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon
               className="item-icon"
@@ -88,7 +90,7 @@ nitatib usciet
             <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon className="item-icon" name="bulb-outline"></ion-icon>
             <h3 className="item-title">Brilliant feature</h3>
@@ -113,7 +115,7 @@ nitatib usciet la consequ iatione
             <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon className="item-icon" name="bulb-outline"></ion-icon>
             <h3 className="item-title">Brilliant feature</h3>
@@ -138,7 +140,7 @@ nitatib usciet la consequ iatione
             <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon className="item-icon" name="bulb-outline"></ion-icon>
             <h3 className="item-title">Brilliant feature</h3>
@@ -153,7 +155,7 @@ nitatib usciet la consequ iatione
 
         </div>
 
-        <div className='titleDiv' style={{display:"flex"}}>   <span class="material-symbols-outlined">star </span>   <h1>Maroc</h1> </div>
+        <div className='titleDiv' style={{display:"flex" , alignItems:"center"}}>  <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>     <h1>Maroc</h1> </div>
         <div className="features1">
 
         <div className="item item1">
@@ -169,7 +171,7 @@ nitatib usciet la consequ iatione
             <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon className="item-icon" name="bulb-outline"></ion-icon>
             <h3 className="item-title">Brilliant feature</h3>
@@ -194,7 +196,7 @@ nitatib usciet la consequ iatione
             <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon className="item-icon" name="bulb-outline"></ion-icon>
             <h3 className="item-title">Brilliant feature</h3>
@@ -219,7 +221,7 @@ nitatib usciet la consequ iatione
             <div style={{display:"flex"}} className='imgdiv'>
             <img  src="https://www.ferra.ru/thumb/860x0/filters:quality(75):no_upscale()/imgs/2022/06/25/15/5467074/9b8ac64149ba0a542220a03b494c6ad99f9206aa.jpg"
               />   
-              <p> 20 Minute Source:  <span style={{color:"green"}} > Politique </span>  </p>
+              <p> 20 Minute Source:  <span style={{color:"#00D5F3"}} > Politique </span>  </p>
               </div> 
             <ion-icon className="item-icon" name="bulb-outline"></ion-icon>
             <h3 className="item-title">Brilliant feature</h3>

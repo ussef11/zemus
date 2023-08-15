@@ -33,7 +33,7 @@
     font-weight: 700;
     /* margin-left: 34px; */
     margin-bottom: 3px;
-    color: green;
+    color: #0098C7;
 }
 .css-cveggr-MuiListItemIcon-root{
     
@@ -45,7 +45,7 @@
     font-size: 12px;
     font-weight: 400;
     padding: 2px;
-    color: green;
+    color: #0098C7;
 }
 
 
@@ -125,7 +125,7 @@
   
 
   .voir{
-    color: green;
+    color: #0098C7;
     font-size: 18px;
     margin-left: 9px;
     font-weight: 700;
@@ -133,7 +133,7 @@
   }
 
   .imgicon{
-    width: 25px;
+    width: 23px;
     height: 23px;
     position: relative;
     margin-right: 5px;
@@ -147,4 +147,34 @@
 
   .css-uob957-MuiListSubheader-root{
     position: initial !important;
+  }
+
+  .iconProfil{
+    width: 36px;
+    height: 38px;
+    border-radius: 77px;
+    /* border: 2px solid #AAA; */
+    object-fit: cover;
+    margin-left: -4px;
+    margin-right: 5px;
+  }
+
+
+  .imgiconMessage{
+  
+    margin-right: 5px;
+ 
+    position: relative;
+    height: 18px;
+    width: 24px;
+    top: -1px;
+  }
+
+  .imgiconfav{
+    margin-right: -5px;
+    position: relative;
+    width: 32px;
+    /* margin: 0; */
+    height: 34px;
+    left: -6px;
   }

@@ -15,7 +15,7 @@ const Payment = () => {
 {/* <div  className="containersubimg"> */}
         <div   className="container-top">
             <h2>Profitez de la version Premium avec des accès exclusifs pour votre voyage sur Zemus:</h2>
-           <Link to={"/home"}><span class="material-symbols-outlined">
+           <Link to={"/"}><span class="material-symbols-outlined">
 home
 </span></Link>
         </div>

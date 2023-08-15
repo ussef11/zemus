@@ -38,7 +38,7 @@ const Message = () => {
               width: "386px",
               marginTop: 0,
               borderRadius: "67px",
-              border: "1px solid green",
+              border: "1px solid #00D5F3",
             }}
           >
             <InputBase
@@ -75,6 +75,7 @@ const Message = () => {
         <div className="inputtow">
           <div className="Message1">
             <input
+            style={{backgroundColor:"#009ccc"}}
               title="Write Message"
               tabindex="i"
               pattern="\d+"
@@ -86,6 +87,7 @@ const Message = () => {
           </div>
           <div style={{ marginTop: "5px" }} className="Message1">
             <textarea
+                        style={{backgroundColor:"#009ccc"}}
               tabindex="i"
               pattern="\d+"
               placeholder="Rédiger une revue de presse ..."

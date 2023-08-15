@@ -14,7 +14,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./Home.css";
 import backgroundImg from "../../media/Ligne.png"
 import { Context } from "../../Helper/Context";
-
+import etoille from "../../media/star.png"
+import Noetoille from "../../media/startred.png"
 
 
 const StyledMenu = styled((props) => (
@@ -151,23 +152,56 @@ export const Profile = () => {
       alert(searchTerm);
     };
 
+
+    const [isHover , setisHover] = useState(false)
+
+    const handleEnter = ()=>{
+      setisHover(true)
+    }
+    const handleleave= ()=>{
+      setisHover(false)
+    }
+
   return (
- <>  
- {  Fil !== "amis" && Fil  !== "suivis" && Fil !== "msg" && Fil !== "Publication" ?  <div> 
+ <> 
+ {  Fil !== "amis" && Fil  !== "suivis" && Fil !== "msg" && Fil !== "Publication" && Fil !== "ProfilInfo" ?  <div> 
     <div style={{ display: "flex" }} className="profile">
-      <div className="icon">
+      <div  className="icon">
         <Stack direction="row" spacing={2}>
-          <Avatar
-            className="avat"
-            alt="Femy Sharp"
-            src="/static/images/avatar/1.jpg"
-          />
+           { isHover && <div onMouseEnter={handleEnter}  onMouseLeave={handleleave} className="file-input">
+ <input
+   type="file"
+   name="file-input"
+   id="file-input"
+   className="file-input__input"
+ />
+ <label className="file-input__label" for="file-input">
+   <svg
+     aria-hidden="true"
+     focusable="false"
+     data-prefix="fas"
+     data-icon="upload"
+     className="svg-inline--fa fa-upload fa-w-16"
+     role="img"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512"
+   >
+     <path
+       fill="currentColor"
+       d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+     ></path>
+   </svg>
+</label>
+</div>}
+        <img onMouseEnter={handleEnter}  onMouseLeave={handleleave} className="iconProfile" src="https://i.imgur.com/0I4lkh9.jpg" />
+ 
+
           <div className="profilename">
             <h2>Femy Sharp </h2>
             <button
               className="btnpreprofile"
               onClick={() => {
-                alert("Passer a la version Premium");
+               window.location.href ="/Subscription"
               }}
             >
               Passer a la version Premium
@@ -212,6 +246,7 @@ export const Profile = () => {
           disableElevation
           onClick={handleClick}
           endIcon={<KeyboardArrowDownIcon />}
+          style={{backgroundColor:"#009AAD"}}
         >
           Journaux
         </Button>
@@ -227,18 +262,18 @@ export const Profile = () => {
         >
           <ul className="ulflag">
 
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Russie</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Chine</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Irlande</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">France</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Romania</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Amerique</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Brasile</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Spagne</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Almagne</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Albanie</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Maroc</a></li></div>
-<div className="actuins" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span><a href="#">Algerie</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Russie</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Chine</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Irlande</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">France</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Romania</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Amerique</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Brasile</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Spagne</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Almagne</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Albanie</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Maroc</a></li></div>
+<div className="actuins" onClick={handleClose2}> <li> <img className="startArticle" src={etoille} /><a href="#">Algerie</a></li></div>
 </ul>
 
           {/* <Divider sx={{ my: 0.5 }} /> */}
@@ -255,6 +290,7 @@ export const Profile = () => {
           disableElevation
           onClick={handleClick1}
           endIcon={<KeyboardArrowDownIcon />}
+          style={{backgroundColor:"#009AAD"}}
         >
           De quoi parle-t-on?
         </Button>
@@ -268,16 +304,17 @@ export const Profile = () => {
           onClose={handleClose1}
         >
           <div className="actions" onClick={handleClose1}>
-            <span > De quels pays parle-t-on?</span>
+            <span style={{color:"black"}} > De quels pays parle-t-on?</span>
           </div>
           <div  className="actions" onClick={handleClose1}>
-            <span>Quels pays en parlent?</span>
+            <span  style={{color:"black"}}>Quels pays en parlent?</span>
           </div>
         </StyledMenu1>
       </div>
 
       <div className="list3">
         <Button
+          style={{backgroundColor:"#009AAD"}}
           id="demo-customized-button"
           aria-controls={open2 ? "demo-customized-menu" : undefined}
           aria-haspopup="true"
@@ -302,18 +339,18 @@ export const Profile = () => {
      
           <ul className="ulflag">
 
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>   <img src="https://www.countryflagicons.com/FLAT/64/RU.png" /><a href="#">Russie</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/CN.png" /><a href="#">Chine</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/IE.png" /><a href="#">Irlande</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/FR.png" /><a href="#">France</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/RO.png" /><a href="#">Romania</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/US.png" /><a href="#">Amerique</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/BR.png" /><a href="#">Brasile</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/ES.png" /><a href="#">Spagne</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/DE.png" /><a href="#">Almagne</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/AL.png" /><a href="#">Albanie</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/MA.png" /><a href="#">Maroc</a></li></div>
-<div className="divli" onClick={handleClose2}> <li> <span class="material-symbols-outlined">star </span>  <img src="https://www.countryflagicons.com/FLAT/64/DZ.png" /><a href="#">Algerie</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>   <img src="https://www.countryflagicons.com/FLAT/64/RU.png" /><a href="#">Russie</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/CN.png" /><a href="#">Chine</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/IE.png" /><a href="#">Irlande</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/FR.png" /><a href="#">France</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/RO.png" /><a href="#">Romania</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/US.png" /><a href="#">Amerique</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/BR.png" /><a href="#">Brasile</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/ES.png" /><a href="#">Spagne</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/DE.png" /><a href="#">Almagne</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/AL.png" /><a href="#">Albanie</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/MA.png" /><a href="#">Maroc</a></li></div>
+<div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/DZ.png" /><a href="#">Algerie</a></li></div>
 </ul>
          
 

@@ -5,6 +5,7 @@ import Favoli from "../../media/bookmarklight.svg";
 import facebook from "../../media/facebook.svg";
 import twitter from "../../media/twitter.svg";
 import linkedin from "../../media/linkedin.svg";
+import z from "../../media/z.png";
 
 import { Context } from "../../Helper/Context";
 const ArticlesFav = () => {
@@ -33,6 +34,7 @@ const ArticlesFav = () => {
    <img src={facebook}/>
    <img src={linkedin}/>
    <img src={twitter}/>
+   <img onClick={()=>{alert("partager  Article")}} className="zicon" src={z}/>
 </div>
             <div style={{ display: "flex" }} className="headtitle">
               <h1> Revue de Presse:</h1>

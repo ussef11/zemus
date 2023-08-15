@@ -13,9 +13,22 @@
     /* margin-right: 9px; */
     color: white;
     background-color: #188cff;
-    margin-left: 40px;
+    /* margin-left: 40px; */
+text-align: center;
+    
 }
+.Valider3{
+    position: relative;
+    top: 375px;
 
+    text-align: center;
+    
+}
+.divvalid1{
+    position: relative;
+    text-align: center;
+    top: 99px;
+}
 .themadiv{
         /* margin-top: 20px; */
     /* height: 37%; */
@@ -41,7 +54,7 @@
     margin-left: 22px;
     border-radius: 26px;
     background-color: #eeeeee;
-    padding: 20px;
+    padding: 20px 0px;
     width: 40%;
 }
 
@@ -80,7 +93,7 @@ margin: 0;
     margin: 1rem 0;
     font-weight: 700;
     color: #008EB5;
-    font-size: 21px;
+    font-size: 16px;
 }
 
 .source h2{
@@ -162,3 +175,6 @@ row-gap: 1rem;
     font-size: 28px;
     margin-left: 19px;
   }
+
+  .imgContry{
+    width: 48px;  }

@@ -1,12 +1,13 @@
 .btnpreprofile{
     
-    background: #ffe500;
-    height: 44px;
-    border-radius: 20px;
-    border-color: #ffe50000;
-    font-size: 14px;
-    font-family: system-ui;
-    font-weight: 500;
+  padding: 5px;
+  background: #ffe02b;
+  /* height: 34px; */
+  border-radius: 20px;
+  border-color: #ffe50000;
+  font-size: 14px;
+  font-family: system-ui;
+  font-weight: 500;
   }
   .avat{
     height: 148px !important;
@@ -56,8 +57,8 @@
   .css-1vm0r4s-MuiPaper-root{
     width: 38vw !important;
     height: 55px !important;
-    border-color: green !important;
-    border: 1px solid green !important;
+    border-color: #0098C7 !important;
+    border: 1px solid #0098C7 !important;
   }
 
   .droplist{
@@ -87,16 +88,31 @@
   justify-content: center;
 }  
   .css-zddlty-MuiButtonBase-root-MuiButton-root{
+
+    /* background-color: #009AAD!important; */
     height: 42px!important;
-    font-size: 14px!important;
-    width: 104%!important;
+    font-size: 17px!important;
+    /* width: 104%!important; */
     border-radius: 47px!important;
-    font-weight: 700!important;
-    font-family: inherit!important;
+    font-weight: 500!important;
+    font-family: sans-serif!important;
     text-transform: inherit!important;
 
 
+  }
 
+  .iconProfile{
+    width: 131px;
+    height: 127px;
+    border-radius: 62px;
+    border: 2px solid #AAA;
+    object-fit: cover;
+    margin-left: 0px;
+    margin-right: 4px;
+  }
+
+  .btnpreprofile{
+    cursor: pointer;
   }
 
   /* .css-1x0waax-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root{
@@ -133,7 +149,7 @@
     font-weight: 400;
     margin-left: 15px;
     cursor: pointer;
-    color: green;
+    color: #0098C7;
   }
 
   .actions span{
@@ -141,7 +157,7 @@
     font-weight: 400;
     margin-left: 15px;
     cursor: pointer;
-    color: green;
+    color: #0098C7;
   }
   .divli span{
 
@@ -150,7 +166,7 @@
     top: 4px;
 
     cursor: pointer;
-    color: green;
+    color: #0098C7;
   }
 
   .css-6hp17o-MuiList-root-MuiMenu-list{
@@ -189,12 +205,12 @@
   .divli  a {
     text-decoration: none;
     color: inherit;
-    font-size: 22px;
+    font-size: 19px;
     margin-left: 9px;
   }
   .actuins  a {
     text-decoration: none;
-    color: green;
+    color: #0098C7;
     font-size: 22px;
     margin-left: 9px;
   }
@@ -206,6 +222,40 @@
 
 
 
+  .file-input{
+    align-items: center;
+    display: flex;
+    margin-left: -59px;
+    position: relative;
+    left: 102px;
+  }
 
 
+  .file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .file-input__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 12px;
+    background-color: #0098C7;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  }
+  
+  .file-input__label svg {
+    height: 16px;
+    margin-right: 4px;
+  }
   

@@ -17,20 +17,21 @@ const Suivis = () => {
       
       <ul className="ulflag">
 
-<div className="divli" > <li>    <img src="https://www.countryflagicons.com/FLAT/64/RU.png" /><a href="#">Russie</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/CN.png" /><a href="#">Chine</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/IE.png" /><a href="#">Irlande</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/FR.png" /><a href="#">France</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/RO.png" /><a href="#">Romania</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/US.png" /><a href="#">Amerique</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/BR.png" /><a href="#">Brasile</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/ES.png" /><a href="#">Spagne</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/DE.png" /><a href="#">Almagne</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/AL.png" /><a href="#">Albanie</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/MA.png" /><a href="#">Maroc</a></li></div>
-<div className="divli" > <li>   <img src="https://www.countryflagicons.com/FLAT/64/DZ.png" /><a href="#">Algerie</a></li></div>
+<div className="divli" > <li>    <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/RU.png" /><a href="#">Russie</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/CN.png" /><a href="#">Chine</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/IE.png" /><a href="#">Irlande</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/FR.png" /><a href="#">France</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/RO.png" /><a href="#">Romania</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/US.png" /><a href="#">Amerique</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/BR.png" /><a href="#">Brasile</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/ES.png" /><a href="#">Spagne</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/DE.png" /><a href="#">Almagne</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/AL.png" /><a href="#">Albanie</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/MA.png" /><a href="#">Maroc</a></li></div>
+<div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/DZ.png" /><a href="#">Algerie</a></li></div>
 </ul>
-<button className='Valider'>Valider </button>   
+<div className='divvalid1' style={{textAlign:"center"}}>  
+<button className='Valider'>Valider </button>    </div>
 
 
       </div>
@@ -144,7 +145,8 @@ const Suivis = () => {
         </div>
      
       </div>
-      <button className='Valider'>Valider </button>   
+      <div style={{textAlign:"right"}}>     <button  style={{marginRight:"15px"}} className='Valider'>Valider </button>   </div>
+ 
       </div>
 
       <div className='source'>
@@ -163,7 +165,7 @@ const Suivis = () => {
        <li> <img src={star} />Universités</li>
        <li> <img src={star} />Grandes entreprises</li>
     </ul> </div>
-    <button className='Valider'>Valider </button>   
+   <div className='Valider3'>  <button className='Valider'>Valider </button>    </div>
          </div>
 
 <div className='sourcecontan'> 

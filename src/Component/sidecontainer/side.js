@@ -3,11 +3,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ListSubheader from "@mui/material/ListSubheader";
-import NewsIcon from "@mui/icons-material/Article";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import PeopleIcon from "@mui/icons-material/People";
-import MessageIcon from "@mui/icons-material/Message";
-import PersonIcon from "@mui/icons-material/Person";
+
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import Collapse from "@mui/material/Collapse";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
@@ -22,7 +18,20 @@ import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
-import etoille from "../../media/etoille.png"
+import etoille from "../../media/star.png"
+import Noetoille from "../../media/startred.png"
+import h from "../../media/h.png"
+import bookmark from "../../media/bookmark.svg"
+import amis from "../../media/amis.png"
+import message from "../../media/message.png"
+import Chroniques from "../../media/ICONS THEMATIQUE/Fichier 5_1.png"
+import Societe from "../../media/ICONS THEMATIQUE/Fichier2.png"
+import culture from "../../media/ICONS THEMATIQUE/Fichier 3.png"
+import vivre from "../../media/ICONS THEMATIQUE/Fichier 4.png"
+import ajouterth from "../../media/ICONS THEMATIQUE/ajouter une thématique_1.png"
+import info from "../../media/ICONS THEMATIQUE/info.png"
+import Planete from "../../media/ICONS THEMATIQUE/monde.png"
+
 import "./side.css";
 const Side = () => {
   const { Fil, SetFil } = useContext(Context);
@@ -51,7 +60,14 @@ const Side = () => {
       component="nav"
       aria-labelledby="nested-list-subheader"
       subheader={
-        <ListSubheader component="div" id="nested-list-subheader">
+        <ListSubheader  onClick={() => {
+          try {
+            SetFil("fil");
+          } catch (error) {
+            window.location.replace("/");
+          }
+          
+        }} component="div" id="nested-list-subheader">
           <img
             src={Logo}
             className="logo"
@@ -62,150 +78,185 @@ const Side = () => {
       }
     >
       <ListItemButton
-        onClick={() => {
-          SetFil("fil");
-        }}
+      onClick={() => {
+        try {
+          SetFil("msg");
+        } catch (error) {
+           window.location.replace("/");
+        }
+       }}
       >
-        <ListItemIcon>
-          <NewsIcon style={{ fill: "green" }} />
-        </ListItemIcon>
+         <img className="imgicon" src={h} />
         <span className="spanacc">Fil d’actualité</span>
       </ListItemButton>
       <ListItemButton
-        onClick={() => {
-          SetFil("articlefav");
-        }}
+
+onClick={() => {
+  try {
+    SetFil("articlefav");
+  } catch (error) {
+     window.location.replace("/");
+  }
+ }}
+     
       >
-        <ListItemIcon>
-          <FavoriteIcon style={{ fill: "green" }} />
-        </ListItemIcon>
+         <img className="imgiconfav" src={bookmark} />
         <span className="spanacc">Articles favoris</span>
       </ListItemButton>
       <ListItemButton
-        onClick={() => {
-          SetFil("amis");
-        }}
+
+onClick={() => {
+  try {
+    SetFil("amis");
+  } catch (error) {
+     window.location.replace("/");
+  }
+ }}
+
+   
       >
-        <ListItemIcon>
-          <PeopleIcon style={{ fill: "green" }} />
-        </ListItemIcon>
+        <img className="imgicon" src={amis} />
         <span className="spanacc">Amis</span>
       </ListItemButton>
 
-      <ListItemButton   onClick={() => {
+      <ListItemButton  
+      onClick={() => {
+        try {
           SetFil("suivis");
-        }} >
+        } catch (error) {
+           window.location.replace("/");
+        }
+       }}
+      
+      
+   >
        <img className="imgicon" src={etoille} />
         <span className="spanacc">Suivis</span>
       </ListItemButton>
 
       <ListItemButton 
-       onClick={() => {
-        SetFil("msg");
-      }}
+    onClick={() => {
+      try {
+        SetFil("friendmsg");
+      } catch (error) {
+         window.location.replace("/");
+      }
+     }}
+
+
       >
-        <ListItemIcon>
-          <MessageIcon style={{ fill: "green" }} />
-        </ListItemIcon>
+         <img className="imgiconMessage" src={message} />
         <span className="spanacc">Message</span>
       </ListItemButton>
       
-      <ListItemButton   onClick={() => {
-          SetFil("profile");
-        }}>
-        <ListItemIcon  
-       >
-          <PersonIcon style={{ fill: "green" }} />
-        </ListItemIcon>
+      <ListItemButton 
+        onClick={() => {
+          try {
+            SetFil("profile");
+          } catch (error) {
+             window.location.replace("/");
+          }
+         }}
+        
+        >
+       
+       <img className="iconProfil" src="https://i.imgur.com/0I4lkh9.jpg"/>
         <span className="spanacc">Profil</span>
       </ListItemButton>
 
       {
-        Fil !== "amis" && Fil !== "suivis" && Fil !== "msg"  && Fil !== "friendmsg" && Fil !== "conv" && Fil !== "profile" ? (
+        Fil !== "amis" && Fil !== "suivis" && Fil !== "msg"  && Fil !== "friendmsg" && Fil !== "conv" && Fil !== "profile" 
+         && Fil !== "ProfilInfo" ? (
           <>
             {" "}
             <ListItemButton x={{ marginLeft: "35px", marginBottom: "-8px" }}>
               <span className="title">Thématiques</span>
             </ListItemButton>
             <ListItemButton sx={{ marginLeft: "35px", marginBottom: "8px" }}>
-              <ListItemIcon>
-                <AssignmentIcon style={{ fill: "green" }} />
-              </ListItemIcon>
+            <img className="imgicon" src={Chroniques} />
               <span className="spanacc">Chroniques</span>
             </ListItemButton>
             <ListItemButton sx={{ marginLeft: "35px", marginTop: "-12px" }}>
-              <span className="ff">
+            <img className="imgicon" src={etoille} /> <span className="ff">
                 {" "}
-                <span class="material-symbols-outlined">star </span> Politique
+                  Politique
                 Choix Élections
               </span>
             </ListItemButton>
             <ListItemButton sx={{ marginLeft: "35px", marginTop: "-12px" }}>
-              <span className="ff">
+                 <img className="imgicon" src={Noetoille} /> <span className="ff">
                 {" "}
-                <span class="material-symbols-outlined">star </span> Économie
+                  Économie
                 Finance
               </span>
             </ListItemButton>
             <ListItemButton sx={{ marginLeft: "35px", marginTop: "-12px" }}>
-              <span className="ff">
+                 <img className="imgicon" src={Noetoille} /> <span className="ff">
                 {" "}
-                <span class="material-symbols-outlined">star </span> Contrats
+                  Contrats
                 Investissements
               </span>
             </ListItemButton>
             <ListItemButton sx={{ marginLeft: "35px", marginTop: "-12px" }}>
-              <span className="ff">
+                 <img className="imgicon" src={Noetoille} /> <span className="ff">
                 {" "}
-                <span class="material-symbols-outlined">star </span> Affaires
+                   Affaires
                 étrangères
               </span>
             </ListItemButton>
             <ListItemButton sx={{ marginLeft: "35px", marginTop: "-12px" }}>
-              <span className="ff">
+                 <img className="imgicon" src={etoille} /> <span className="ff">
                 {" "}
-                <span class="material-symbols-outlined">star </span> Fête
+                  Fête
                 Commémoration
               </span>
             </ListItemButton>
             <ListItemButton sx={{ marginLeft: "35px", marginTop: "-12px" }}>
-              <span className="ff">
+                 <img className="imgicon" src={etoille} /> <span className="ff">
                 {" "}
-                <span class="material-symbols-outlined">star </span> Théâtre
+                  Théâtre
                 Concert Exposition
               </span>
             </ListItemButton>
-            <ListItemButton>
-              <ListItemIcon>
-                <PeopleAltIcon style={{ fill: "green" }} />
-              </ListItemIcon>
+            <ListItemButton
+                onClick={() => {
+                  try {
+                    SetFil("Société");
+                  } catch (error) {
+                     window.location.replace("/");
+                  }
+                 }}
+            
+     >
+               <img className="imgicon" src={Societe} />
               <span className="spanacc">Société</span>
             </ListItemButton>
+
             <ListItemButton>
-              <ListItemIcon>
-                <PublicIcon style={{ fill: "green" }} />
-              </ListItemIcon>
+            <img className="imgicon" src={culture} />
               <span className="spanacc">Culture</span>
             </ListItemButton>
+
             <ListItemButton>
-              <ListItemIcon>
-                <PeopleAltIcon style={{ fill: "green" }} />
-              </ListItemIcon>
+            <img className="imgicon" src={vivre} />
               <span className="spanacc">Vivre ensemble</span>
             </ListItemButton>
+
             <ListItemButton>
-              <ListItemIcon>
-                <PublicIcon style={{ fill: "green" }} />
-              </ListItemIcon>
+            <img className="imgicon" src={Planete} />
               <span className="spanacc">Planète</span>
             </ListItemButton>
+            <ListItemButton>
+            <img className="imgicon" src={ajouterth} />
+              <span className="spanacc">Ajouté un thématique</span>
+            </ListItemButton>
+
             <ListItemButton onClick={handleClick}>
-              <ListItemIcon>
-                <InfoIcon style={{ fill: "green" }} />
-              </ListItemIcon>
+            <img className="imgicon" src={info} />
               <span className="spanacc">Informations</span>
               {open ? <ExpandLess /> : <ExpandMore />}
             </ListItemButton>
+
             <Collapse in={open} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
                 <ListItemButton
@@ -276,7 +327,7 @@ const Side = () => {
             </Collapse>{" "}
           </>
         ) : (
-          <>    {   Fil !== "profile"  ?   <> 
+          <>    {   Fil !== "profile"  && Fil !== "ProfilInfo"  ?   <> 
                 <div className="serach">
         <Paper
           component="form"
@@ -288,7 +339,7 @@ const Side = () => {
             width:"313px",
             marginTop:"20px",
             borderRadius:"67px",
-            border:"1px solid green",
+            border:"1px solid #00D5F3",
             marginLeft:"21px",
             height:"40px",
             marginRight:"9px"
@@ -312,7 +363,7 @@ const Side = () => {
 
       
 <div className="listamisdiv">
-          <ul id="friend-list"  onClick={()=>{SetFil("friendmsg")}}>
+          <ul id="friend-list"  >
             <li className="friendsent">
               <img src="https://i.imgur.com/0I4lkh9.jpg" />
               <div className="name">

@@ -2,6 +2,10 @@
     margin: 0;
     font-size: 29px;
 }
+.profnameprof h1{
+    margin: 0;
+    font-size: 39px;
+}
 
 .profnameprof img {
     width: 167px;
@@ -46,7 +50,7 @@
 }
 
 .publications h1{    color: #008EB5;
-    font-size: 28px;
+    font-size: 25px;
     
 }
 
@@ -54,7 +58,7 @@
     width: 29%;
 }
 .publications2 h1{    color: #008EB5;
-    font-size: 28px;
+    font-size: 25px;
     
 }
 
@@ -182,7 +186,8 @@ display: flex;
 .content {
     margin-left: -77px;
     position: relative;
-    top: 18px;
+    top: 4px;
+    display: flex;
 }
 
 @media screen and (max-width: 600px) {
@@ -232,12 +237,169 @@ display: flex;
     padding-right: 47px;
 }
 
-.profilli{
+.apropos{
+    cursor: pointer;
     height: 19px;
     background-color: aliceblue;
     margin-bottom: 9px;
+    font-size: 13px;
+    display: flex;
 }
 
-.profilli{
+.apropos span{
+    color: black;
+    position: relative;
+    top: -2px;
+    font-size: 23px;
+    font-weight: 300;
+    margin-right: 7px;
+}
+
+.profimg{
+    cursor: pointer;
+}
+
+.imgprofil img{
+    height: 66vh;
+    border-radius: 25px;
+    margin-right: 27px;
+}
+.Listinfo div{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    /* padding: 1px 2px; */
+    align-items: center;
+    margin-bottom: 13px;
+}
+.Listinfo h3{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.imgInfo-Container{
+    display: flex;
+}
+.profpuls{
+
+    margin-bottom: 2px;
+    display: flex;
+    cursor: pointer;
+    /* height: 19px; */
+    background-color: white;
     font-size: 13px;
 }
+.profpuls span{
+    margin-right: 7px;
+    font-size: 28px;
+}
+.profpuls li{
+    font-size: 15px;
+    position: relative;
+    top: -6px;}
+
+.ulprof{
+    list-style: none!important;
+    padding: 0;
+}
+
+.listinfo-details{
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-width: 33%;
+}
+
+.ProfilInfo{
+    height: 95vh;
+    padding-left: 28px;
+}
+
+.supprofi{
+ 
+        font-size: 11px!important;
+        position: relative!important;
+        top: -15px!important;
+        color: #00C2FE!important;
+        font-weight: 700!important;
+}
+
+.biospan{
+    margin-right: 7px!important;
+    font-size: 14px!important;
+    font-weight: 600!important;
+}
+
+.licpmp{
+    font-size: 16px;
+  
+}
+
+
+.Obtenu{
+    font-size: 13px!important;
+    color: #00C2FE!important;}
+.Obtenu span{
+    font-size: 13px!important;
+    color: black!important;
+}
+
+
+
+.voirdiv{
+    border-radius: 14px;
+    background-color: #02b3e3 !important;
+    width: 131px;
+    margin-top: -22px;
+    position: relative;
+    top: 23px;
+    margin-left: 11px;
+}
+.voirdiv span{
+    font-size: 12px!important;
+    margin-left: 3px!important;
+    position: relative !important;
+    top: -2px !important;
+    /* font-size: 15px !important; */
+    font-weight: 700 !important;
+    color: #000000 !important;
+    /* position: inherit !important; */
+    /* margin-top: -20px!important; */
+}
+
+.h2details{
+    width: 0;
+    position: relative;
+    left: 30px;
+    white-space: nowrap;
+}
+
+
+
+.blur{
+    border-radius: 30px;
+
+    background-color: #eaebeea3;
+    pointer-events: none;
+    position: fixed;
+    top: 172px;
+    /* left: 416px; */
+    width: 21%;
+    height: 730px;
+}
+
+.blur2{
+    width: 26%;
+    border-radius: 30px;
+    background-color: #eaebeea3;
+    pointer-events: none;
+    position: fixed;
+    top: 172px;
+    /* left: 768px; */
+    /* width: 369px; */
+    height: 730px;
+}
+

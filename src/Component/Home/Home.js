@@ -12,10 +12,14 @@ import Listmsg from "../Listmsg/Listmsg";
 import Conversation from "../Conversation/Conversation";
 import Profil from "../Profile/Profile";
 import Publication from "../Publication/Publication";
+import ProfilInfo from "../Profile/ProfilInfo";
+import Conditions from "../CONDITIONS/Conditions";
+import ListeRevue from "../ListeRevue/ListeRevue";
+
 const Home = () => {
   const [Fil, SetFil] = useState();
   const [selection, setselection] = useState(false);
-  const [publicationID , setPublicationID] = useState(false)
+  const [publicationID, setPublicationID] = useState(false);
 
   return (
     <Context.Provider
@@ -25,8 +29,7 @@ const Home = () => {
         selection,
         setselection,
         publicationID,
-        setPublicationID
-
+        setPublicationID,
       }}
     >
       <div
@@ -35,30 +38,37 @@ const Home = () => {
       >
         <div className="sidprof">
           <div style={{ display: "flex", width: "100%" }}>
-        <Side />
+            <Side/>
             <div className="allcontainer">
-            {   Fil !=="conv" &&Fil !== "profile" ?  <Profile /> :null} 
-              {Fil === "fil" ? 
+              {Fil !== "conv" && Fil !== "profile"  && Fil !=="Société" && Fil !== "ListeRevue" ? <Profile /> : null}
+              {Fil === "fil" ? (
                 <Articles />
-               : Fil === "articlefav" ?
+              ) : Fil === "articlefav" ? (
                 <Articlesfav />
-               : Fil === "amis" ? 
+              ) : Fil === "amis" ? (
                 <Friend />
-               : Fil === "suivis" ? 
+              ) : Fil === "suivis" ? (
                 <Suivis />
-               :  Fil === "msg" ?
-                <Message/> :
-                Fil ==="friendmsg" ?
-                <Listmsg/> :
-
-                Fil === "conv" ?
-                <Conversation/>:
-                Fil === "profile" ?
-                <Profil/> : 
-                Fil === "Publication"?
-                <Publication/> :
-                <Articles />
-              }
+              ) : Fil === "msg" ? (
+                <Message />
+              ) : Fil === "friendmsg" ? (
+                <Listmsg />
+              ) : Fil === "conv" ? (
+                <Conversation />
+              ) : Fil === "profile" ? (
+                <Profil />
+              ) : Fil === "Publication" ? (
+                <Publication />
+              ) : Fil === "ProfilInfo" ? (
+                <ProfilInfo />
+              ) : Fil ==="Société"  ?
+              <Conditions/>  
+              : Fil === "ListeRevue" ?
+              <ListeRevue/>
+              
+               :(
+                null
+              )}
             </div>
           </div>
         </div>
