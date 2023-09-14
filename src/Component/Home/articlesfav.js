@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./articles.css";
-import Favo from "../../media/bookmark.svg";
-import Favoli from "../../media/bookmarklight.svg";
+import Favo from "../../media/fav.jpeg";
+import Favoli from "../../media/fav.jpeg";
 import facebook from "../../media/facebook.svg";
 import twitter from "../../media/twitter.svg";
 import linkedin from "../../media/linkedin.svg";
@@ -31,9 +31,9 @@ const ArticlesFav = () => {
           <div className="popup">
          
           <div className="socialicons">
-   <img src={facebook}/>
+   {/* <img src={facebook}/>
    <img src={linkedin}/>
-   <img src={twitter}/>
+   <img src={twitter}/> */}
    <img onClick={()=>{alert("partager  Article")}} className="zicon" src={z}/>
 </div>
             <div style={{ display: "flex" }} className="headtitle">

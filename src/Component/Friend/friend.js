@@ -161,7 +161,7 @@ const Friend = () => {
             width:"386px",
             marginTop:0,
             borderRadius:"67px",
-            border:"1px solid green"
+            border:"1px solid #008eb5"
           }}
         >
           <InputBase

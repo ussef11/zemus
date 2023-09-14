@@ -25,7 +25,7 @@ const Message = () => {
   return (
     <div className="msg-container">
       <div className="msg-head">
-        <h1>Que voulez-vous partager?</h1>
+        <h1> <span style={{color:'black'}} >+ </span>  Que voulez-vous partager?</h1>
 
         <div className="serachams">
           <Paper

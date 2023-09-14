@@ -292,10 +292,11 @@
     margin-top: 21px;
   }
   .titleDivfav button{
+    margin-top: -49px;
     border: none;
     padding: 13px;
     color: white;
-    background-color: #188cff;
+    background-color: #009AAD;
     /* height: 45px; */
     font-size: 18px;
     /* width: 119%; */
@@ -389,9 +390,23 @@
     }
     
     
+
+
+    .divli img{
+      width: 33px;
+      height: 30px;
+    }
     
     
-    
+    .divstart img{
+      position: relative;
+      left: 8px;
+      width: 22px;
+      height: 19px;
+      position: relative;
+      /* margin-right: 0px; */
+      top: 5px;
+    }
     
     
     .blur-background {
@@ -416,7 +431,7 @@
     top: 1px;
     }
     .divstart{
-      border-bottom: 1px solid gray;
+      /* border-bottom: 1px solid gray; */
       width: 19px;
       margin-right: 18px;
     }
@@ -426,3 +441,19 @@
       height: 30px;
       margin-left: 4px;
     }
+
+    .divliinput{
+      margin-top: 15px;
+      margin-left: -17px;
+      padding: 0px 12px;
+    }
+
+  .divliinput input{
+    height: 27px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .divliinput input::placeholder{
+ margin-right: 4px;
+  }

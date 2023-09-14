@@ -18,10 +18,10 @@ import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
-import etoille from "../../media/star.png"
+import etoille from "../../media/start.jpeg"
 import Noetoille from "../../media/startred.png"
 import h from "../../media/h.png"
-import bookmark from "../../media/bookmark.svg"
+import bookmark from "../../media/fav.jpeg"
 import amis from "../../media/amis.png"
 import message from "../../media/message.png"
 import Chroniques from "../../media/ICONS THEMATIQUE/Fichier 5_1.png"

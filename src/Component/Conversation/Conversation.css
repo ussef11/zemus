@@ -29,7 +29,7 @@
 .headconv span{
     font-size: 15px !important;
     font-weight: 700 !important;
-    color: green !important;
+    color: #008eb5 !important;
     margin-left: 4px;
 
 }
@@ -75,7 +75,7 @@
 
 .cnv2{
     margin-bottom: 15px;
-    background-color: #008EB5;
+    background-color: #009aad;
     padding: 10px;
     width: 35%;
     border-top-right-radius: 33px;

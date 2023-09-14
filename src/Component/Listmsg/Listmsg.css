@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,142,181,1) 0%, rgba(2,142,181,0.5663515406162465) 0%, rgba(2,142,181,0.7120098039215687) 0%, rgba(87,226,255,0.4290966386554622) 0%, rgba(0,212,255,0.6055672268907564) 0%, rgba(0,212,255,0.5243347338935574) 0%, rgba(0,208,250,0.3842787114845938) 53%, rgba(0,212,254,0.26943277310924374) 72%);
+    background:#cae1e1;
     height: 122px;
-    width: 85%;
+    width: 89%;
     border-radius: 21px;}
 
 .listprofmgi {

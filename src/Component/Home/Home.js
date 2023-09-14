@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Profile } from "./profile";
 import Side from "../sidecontainer/side";
-import backgroundImg from "../../media/Ligne.png";
+import acc from "../../media/accpage.svg";
 import Articles from "./articles";
 import Articlesfav from "./articlesfav";
 import Friend from "../Friend/friend";
@@ -16,10 +16,20 @@ import ProfilInfo from "../Profile/ProfilInfo";
 import Conditions from "../CONDITIONS/Conditions";
 import ListeRevue from "../ListeRevue/ListeRevue";
 
+import amis from "../../media/amis.svg";
+import conversation_apropo from "../../media/conversation_apropo.svg";
+import messagerie from "../../media/messagerie.svg";
+import profilfond from "../../media/profilfond.svg";
+import fils from "../../media/fils.svg";
+
 const Home = () => {
   const [Fil, SetFil] = useState();
   const [selection, setselection] = useState(false);
   const [publicationID, setPublicationID] = useState(false);
+
+  useEffect(() => {
+    console.log(Fil);
+  }, [Fil]);
 
   return (
     <Context.Provider
@@ -34,13 +44,30 @@ const Home = () => {
     >
       <div
         className="homecontainer"
-        style={{ backgroundImage: `url(${backgroundImg})` }}
+       
       >
-        <div className="sidprof">
-          <div style={{ display: "flex", width: "100%" }}>
-            <Side/>
-            <div className="allcontainer">
-              {Fil !== "conv" && Fil !== "profile"  && Fil !=="Société" && Fil !== "ListeRevue" ? <Profile /> : null}
+        <div style={{ display: "flex", width: "100%" }} className="sidprof">
+        <Side />
+          <div  className="bgcontainer"  style={
+          Fil === "fil"
+            ? { backgroundImage: `url(${fils})` }
+            : Fil === "friendmsg"
+            ? { backgroundImage: `url(${messagerie})` }
+            : Fil === "profile"  ?  { backgroundImage: `url(${profilfond})` }
+            : Fil === "amis"  ? { backgroundImage: `url(${amis})` }
+            : Fil  === "conv" ? { backgroundImage: `url(${conversation_apropo})` }
+            : Fil === "articlefav" ?{ backgroundImage: `url(${amis})` }
+            :  Fil  === "suivis"  ? { backgroundImage: `url(${fils})` }
+            : { backgroundImage: `url(${acc})` }
+        }>
+           
+            <div className="allcontainer" >
+              {Fil !== "conv" &&
+              Fil !== "profile" &&
+              Fil !== "Société" &&
+              Fil !== "ListeRevue" ? (
+                <Profile />
+              ) : null}
               {Fil === "fil" ? (
                 <Articles />
               ) : Fil === "articlefav" ? (
@@ -61,14 +88,11 @@ const Home = () => {
                 <Publication />
               ) : Fil === "ProfilInfo" ? (
                 <ProfilInfo />
-              ) : Fil ==="Société"  ?
-              <Conditions/>  
-              : Fil === "ListeRevue" ?
-              <ListeRevue/>
-              
-               :(
-                null
-              )}
+              ) : Fil === "Société" ? (
+                <Conditions />
+              ) : Fil === "ListeRevue" ? (
+                <ListeRevue />
+              ) : null}
             </div>
           </div>
         </div>

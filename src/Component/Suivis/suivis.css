@@ -12,9 +12,14 @@
     width: 113px;
     /* margin-right: 9px; */
     color: white;
-    background-color: #188cff;
+    background-color: #009aad;
     /* margin-left: 40px; */
 text-align: center;
+
+
+position: relative;
+margin-right: 15px;
+top: 3px;
     
 }
 .Valider3{
@@ -27,7 +32,7 @@ text-align: center;
 .divvalid1{
     position: relative;
     text-align: center;
-    top: 99px;
+    top: 32%;
 }
 .themadiv{
         /* margin-top: 20px; */

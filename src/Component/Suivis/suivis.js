@@ -16,7 +16,7 @@ const Suivis = () => {
       <div className='contry'> 
       
       <ul className="ulflag">
-
+      <div className="divliinput"> <li>  <input placeholder="Rechercher" /> </li></div>
 <div className="divli" > <li>    <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/RU.png" /><a href="#">Russie</a></li></div>
 <div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/CN.png" /><a href="#">Chine</a></li></div>
 <div className="divli" > <li>   <img className='imgContry' src="https://www.countryflagicons.com/FLAT/64/IE.png" /><a href="#">Irlande</a></li></div>
@@ -57,7 +57,7 @@ const Suivis = () => {
        
         </div>
         <div className='thema'>
-<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={amis} />    <h2 style={{marginLeft:"10px"}} >Chroniques</h2>  </div>       
+<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={amis} />    <h2 style={{marginLeft:"10px"}} >Societé</h2>  </div>       
           <ul className="category-list">
           <li> <img src={star} />Éthique Science High Tech</li>
         <li> <img src={star} />Sport Handicap Dopage</li>
@@ -73,7 +73,7 @@ const Suivis = () => {
 
 
         <div className='thema'>
-<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={security} />    <h2 style={{marginLeft:"10px"}} >Chroniques</h2>  </div>       
+<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={security} />    <h2 style={{marginLeft:"10px"}} >Planéte</h2>  </div>       
           <ul className="category-list">
 
            <li> <img src={star} />Police Justice Insécurité</li>
@@ -90,7 +90,7 @@ const Suivis = () => {
         </div>
 
         <div className='thema'>
-<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={monde} />    <h2 style={{marginLeft:"10px"}} >Chroniques</h2>  </div>       
+<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={monde} />    <h2 style={{marginLeft:"10px"}} >Vivre ensemble</h2>  </div>       
           <ul className="category-list">
           <li> <img src={star} />Police Justice Insécurité</li>
          <li> <img src={star} />Alerte Signalement Délit</li>
@@ -105,7 +105,7 @@ const Suivis = () => {
 
       
         <div className='thema'>
-<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={culture} />    <h2 style={{marginLeft:"10px"}} >Chroniques</h2>  </div>       
+<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={culture} />    <h2 style={{marginLeft:"10px"}} >Culture</h2>  </div>       
           <ul className="category-list">
 
            <li> <img src={star} />Éducation Scolarisation</li>
@@ -122,7 +122,7 @@ const Suivis = () => {
 
       
         <div className='thema'>
-<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={vivre} />    <h2 style={{marginLeft:"10px"}} >Chroniques</h2>  </div>       
+<div style={{ marginLeft:"27px", display:"flex" , alignItems:"center"}}><img src={vivre} />    <h2 style={{marginLeft:"10px"}} >Vivre ensemble</h2>  </div>       
           <ul className="category-list">
 
           <li> <img src={star} />Interreligieux Minorités</li>
@@ -145,7 +145,7 @@ const Suivis = () => {
         </div>
      
       </div>
-      <div style={{textAlign:"right"}}>     <button  style={{marginRight:"15px"}} className='Valider'>Valider </button>   </div>
+      <div style={{textAlign:"right"}}>     <button  style={{marginRight:"15px" , top:'15px'}} className='Valider'>Valider </button>   </div>
  
       </div>
 

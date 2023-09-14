@@ -14,7 +14,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./Home.css";
 import backgroundImg from "../../media/Ligne.png"
 import { Context } from "../../Helper/Context";
-import etoille from "../../media/star.png"
+import etoille from "../../media/startremovebg.png"
 import Noetoille from "../../media/startred.png"
 
 
@@ -339,6 +339,7 @@ export const Profile = () => {
      
           <ul className="ulflag">
 
+<div className="divliinput"> <li>  <input placeholder="Rechercher" /> </li></div>
 <div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>   <img src="https://www.countryflagicons.com/FLAT/64/RU.png" /><a href="#">Russie</a></li></div>
 <div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/CN.png" /><a href="#">Chine</a></li></div>
 <div className="divli" onClick={handleClose2}> <li> <div className='divstart'>  <img className="startArticle" src={etoille} /> </div>  <img src="https://www.countryflagicons.com/FLAT/64/IE.png" /><a href="#">Irlande</a></li></div>

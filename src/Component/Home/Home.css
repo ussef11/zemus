@@ -62,39 +62,39 @@
   }
 
   .droplist{
-    margin-left: 11%;
-    width: max-content;
-    display: grid;
+    justify-content: center;
+    /* margin-left: 6%; */
+    /* width: max-content; */
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 90rem;
-    column-gap: 8rem;
-    row-gap: 4rem;
+    max-width: 114rem;
+    column-gap: 29%;
+    row-gap: 9rem;
     margin-top: 10px;
   }
 
-  .list1{
+  /* .list1{
     width: 54%;
-  }
+  } */
 
-
+/* 
   .list3{
     width: 54%;
     margin-left: 43%;
-  }
+  } */
 
 .profile{
   text-align: center;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }  
   .css-zddlty-MuiButtonBase-root-MuiButton-root{
-
     /* background-color: #009AAD!important; */
-    height: 42px!important;
-    font-size: 17px!important;
+    height: 53px!important;
+    font-size: 18px!important;
     /* width: 104%!important; */
     border-radius: 47px!important;
-    font-weight: 500!important;
+    font-weight: 600!important;
     font-family: sans-serif!important;
     text-transform: inherit!important;
 
@@ -133,8 +133,8 @@
   } */
 
   .actions{
-    height: 46px;
-    padding: 10px;
+    /* height: 46px; */
+    padding: 3px;
     background-color: aliceblue;
     margin-bottom: 13px
   }
@@ -153,7 +153,7 @@
   }
 
   .actions span{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     margin-left: 15px;
     cursor: pointer;
@@ -195,6 +195,16 @@
     margin-right: 10px;
   }
 
+  .startArticle{
+    position: relative;
+    left: 8px;
+    width: 22px;
+    height: 19px;
+    position: relative;
+    /* margin-right: 0px; */
+    top: 5px;
+  }
+
   
   .actions  a {
     text-decoration: none;
@@ -205,14 +215,16 @@
   .divli  a {
     text-decoration: none;
     color: inherit;
-    font-size: 19px;
+    font-size: 16px;
     margin-left: 9px;
   }
   .actuins  a {
+
+    font-weight: 600;
     text-decoration: none;
     color: #0098C7;
-    font-size: 22px;
-    margin-left: 9px;
+    font-size: 17px;
+    margin-left: 1px;
   }
 
   /* .sidprof{
@@ -259,3 +271,23 @@
     margin-right: 4px;
   }
   
+
+  .css-1bq3xq-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root{
+    min-width: 292px !important;
+  }
+
+  .icon{
+    margin-right: 140px;
+    margin-left: 49px;
+  }
+
+  .serach{
+    margin-left: auto;
+  }
+
+  .bgcontainer{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+  }

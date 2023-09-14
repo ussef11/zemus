@@ -193,8 +193,8 @@
     /* margin-left: -37px; */
 }
 .overlay {
-    background: #FF416C;
-    background: linear-gradient(to top, #009AAD, #008EB5);
+    /* background: #FF416C;
+    background: linear-gradient(to top, #009AAD, #008EB5); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -323,4 +323,14 @@
 }
 .bienvenudiv  h1{
     font-size: 63px;
+}
+
+
+
+
+.overlay-panel{
+	background-size: contain;
+	background-repeat: no-repeat;
+
+    width: 100%;
 }

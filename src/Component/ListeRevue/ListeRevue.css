@@ -69,7 +69,8 @@
 
     display: flex;
     cursor: pointer;
-    background-image: linear-gradient(to right bottom, #ffffff, #ffffff);
+    /* background-image: linear-gradient(to right bottom, #ffffff, #ffffff); */
+    background: #f6f4f5!important;
     overflow: hidden;
     border-radius: 30px;
     transition: all 0.3s;
@@ -280,8 +281,10 @@
       display: grid;
   }
   .favicon img{
-    height: 36px;
-    width: 58px;
+    height: 31px;
+    width: 21px;
+    margin-right: 14px;
+    margin-left: 12px;
   }
 
   
@@ -295,7 +298,7 @@
     border: none;
     padding: 13px;
     color: white;
-    background-color: #188cff;
+    background-color: #009AAD;
     /* height: 45px; */
     font-size: 18px;
     /* width: 119%; */
@@ -366,9 +369,11 @@
     }
     
     .actiondiv input{
-      margin-top: 56px;
-      margin-left: 8px;
-      width: 24px;
+        /* height: 31px; */
+        margin-top: 56px;
+        margin-left: 5px;
+        width: 29px;
+        font-size: 54px;
     }
     
     .actiondiv span{
@@ -403,16 +408,18 @@
 
 
     .startArticle{
+    
       position: relative;
-    left: -8px;
-    width: 36px;
-    height: 32px;
-    position: relative;
-    /* margin-right: 0px; */
-    top: 1px;
+      left: -4px;
+      width: 22px;
+      height: 19px;
+      position: relative;
+      /* margin-right: 0px; */
+      top: 0px;
+  
     }
     .divstart{
-      border-bottom: 1px solid gray;
+      /* border-bottom: 1px solid gray; */
       width: 19px;
       margin-right: 18px;
     }
@@ -443,4 +450,9 @@
     }
     .voirdiv{
         cursor: pointer;
+    }
+
+
+    .css-1kwmwok-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root{
+      min-width: 165px!important;
     }

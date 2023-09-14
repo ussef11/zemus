@@ -172,6 +172,7 @@ const Profile = () => {
            
             
               <div  className="list1">
+                <div> 
         <Button
           id="demo-customized-button"
           aria-controls={open ? "demo-customized-menu" : undefined}
@@ -228,7 +229,15 @@ const Profile = () => {
 
           {/* <Divider sx={{ my: 0.5 }} /> */}
         </StyledMenu>
+        </div> 
+
+       <div>   <button  onClick={() => {
+             console.log("suivre")
+              }}  class="suivrebtn">Suivre</button>  </div>
+
+        
       </div>
+
 
              
             </div>
