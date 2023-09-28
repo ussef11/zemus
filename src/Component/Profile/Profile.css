@@ -108,7 +108,7 @@ display: flex;
 :root {
 	--primary: #ae7efe;
 	--outdark: #573f7f;
-	--white: #09ff7c;
+	--white: #009aad;
 }
 
 
@@ -308,6 +308,7 @@ display: flex;
 }
 
 .listinfo-details{
+    margin-left: 30px;
     background-color: #ffffff;
     border-radius: 20px;
     max-width: 33%;

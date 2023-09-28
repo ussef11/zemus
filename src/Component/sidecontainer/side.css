@@ -14,14 +14,15 @@
 }
 
 .css-i7rae6-MuiList-root{
+      max-height: 100px;
   overflow: auto!important;
     min-height: 100vh !important; 
-    background-color: #ececec!important;
-    max-width: 371px!important;
+    background-color: #f0f0f0!important;
+    max-width:339px!important;
 }
 
 .css-uob957-MuiListSubheader-root{
-    background-color: #ececec!important;
+    background-color: #f0f0f0!important;
 }
 
 .spanacc{
@@ -142,12 +143,17 @@
   }
 
   .listamisdiv{
+    margin-left: -15px;
     overflow: auto;
     max-height: 443px;
   }
 
   .css-uob957-MuiListSubheader-root{
     position: initial !important;
+  }
+  
+  .css-107g3ff-MuiPaper-root{
+    margin-left: 10px!important;
   }
 
   .iconProfil{

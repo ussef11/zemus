@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Conversation.css";
 import Video from "../../media/video_1.png";
 import appelle from "../../media/appelle_1.png";
 import play from "../../media/icons8-play-50.png";
-const Conversation = () => {
+import { Context } from "../../Helper/Context"; 
 
+const Conversation = () => {
+  
+  const { Fil, SetFil } = useContext(Context);
   const [displayopt , setdisplayopt] = useState(false)
 
 
@@ -18,8 +21,8 @@ const Conversation = () => {
         </div>
 
         <div className="actiioncall">
-          <img src={Video} />
-          <img src={appelle} />
+          <img onClick={ ()=>{SetFil('videocall')}  }      src={Video} />
+          <img   onClick={ ()=>{SetFil('audiocall')}  }  src={appelle} />
         </div>
       </div>
 

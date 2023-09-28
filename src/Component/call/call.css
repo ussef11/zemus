@@ -1,0 +1,141 @@
+.imageCall {
+    grid-column: 2 / 5;
+}
+.imageVideo {
+    grid-column: 1 / 5;
+}
+
+.audiocallContainer {
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px;
+}
+
+.imageCall {
+    height: 96vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.imageVideo {
+    margin-top: -25px;
+    height: 96vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCallaudio{
+    width: 500px;
+    height: 500px;
+    border-radius: 503px;
+    border: 2px solid #000000;
+}
+
+.imgCallvideo{
+    height: 84vh;
+    margin-left: 37px;
+    width: 892px;
+    border-radius: 5px;
+}
+
+
+
+.messageInCall {
+    height: 78vh;
+    margin-right: 20px;
+    background: white;
+    width: 400px;
+    border-radius: 21px;
+}
+
+.firstmsg{
+
+    border-radius: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.appelEncour{
+    margin-top: -22px;
+
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.isepNet{
+    width: 21%;
+    position: absolute;
+    bottom: 185px;
+    
+    display: flex;
+    text-align: 0;
+
+    background-color :#d4d4d463;
+    /* margin-bottom: 17px; */
+    border-radius: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+
+
+.iconsCall{
+    margin-top: -280px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iconsCall img{
+   
+    width: 46px;
+    height: 32px;
+ 
+
+}
+
+.iconsCall  div{
+    background-color: white;
+    text-align: center;
+    height: 63px;
+    margin-right: 23px;
+    border-radius: 50%;
+    width: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconsCallVideo{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iconsCallVideo img{
+   
+    width: 46px;
+    height: 32px;
+ 
+
+}
+
+.iconsCallVideo  div{
+    background-color: white;
+    text-align: center;
+    height: 63px;
+    margin-right: 23px;
+    border-radius: 50%;
+    width: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
