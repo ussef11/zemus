@@ -21,6 +21,11 @@
      flex-direction: column;
   
   }
+
+
+
+
+
   .homecontainer {
         background: #f0f0f0;
     /* height: 100vh; */
@@ -43,8 +48,9 @@
 
   }
   .profilename  h2{
-    font-size: 34px;
+    font-size: 29px;
     margin-bottom: 6px;
+        width: 173px;
   }
   /* .profile{
     margin-top: -71vh;
@@ -52,7 +58,7 @@
 
   .css-1vm0r4s-MuiPaper-root{
     border-radius: 67px !important;
-    margin: 55px!important;
+    /* margin: 55px!important; */
   }
 
   .css-1vm0r4s-MuiPaper-root{

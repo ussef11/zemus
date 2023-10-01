@@ -13,22 +13,25 @@ const VieoCall = () => {
     <div className="audiocallContainer">
       <div style={{display:'grid'}} className="imageVideo">
         {" "}
-        <div> 
+        <div  className="videoimages" style={{display:'flex '}}> 
+
         <img
           className="imgCallvideo"
           src="https://media.istockphoto.com/id/1051453470/photo/portrait-of-smiling-businesswoman-looking-at-camera-posing.jpg?s=612x612&w=0&k=20&c=wdsyvVa9X1W3jvV7Wk9yt8SraHYqVMD7iRpQin9NtdM="
         />
-        <img style={{
+
+<img style={{
 
 position: 'absolute',
-right: '432px',
-width: '354px',
-height: '218px',
+    
+    width: '241px',
+    height: '149px',
 
         }}
           className="imgCallvideo"
           src="https://media.istockphoto.com/id/1357265437/photo/young-smiling-woman-with-bluetooth-headphones-having-video-call-at-home.jpg?s=612x612&w=0&k=20&c=qvAcfXFfpo7uAARmuw8J20_n1CcsTvFClPkutKzx3RU="
         />
+     
  </div>
 
 
@@ -47,7 +50,7 @@ height: '218px',
 
 
 
-      <div className="messageInCall">
+      <div style={{ marginLeft: '54px'}} className="messageInCall">
         <div className="mymessages"></div>
         <div className="firstmsg" style={{ display: "flex" }}>
           <img className="imgsent" src="https://i.imgur.com/0I4lkh9.jpg" />
@@ -105,7 +108,7 @@ height: '218px',
             {" "}
           
             <input   style={{ backgroundColor: "transparent" }} className="sentmsg" placeholder="écrivez ..." />
-            <img className="imgsent" src="https://i.imgur.com/0I4lkh9.jpg" />{" "}
+            {/* <img className="imgsent" src={Video}  />{" "} */}
           </div>
 
 

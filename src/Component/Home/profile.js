@@ -163,7 +163,7 @@ export const Profile = () => {
     }
 
   return (
- <> 
+ <div  style={{ padding: '20px'}}> 
  {  Fil !== "amis" && Fil  !== "suivis" && Fil !== "msg" && Fil !== "Publication" && Fil !== "ProfilInfo" ?  <div> 
     <div style={{ display: "flex" }} className="profile">
       <div  className="icon">
@@ -362,7 +362,7 @@ export const Profile = () => {
 
 
     </div> : null}
-    </>
+    </div>
    
   )
 }

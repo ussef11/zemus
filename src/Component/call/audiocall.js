@@ -14,11 +14,12 @@ const Audiocall = () => {
     <div className="audiocallContainer">
       <div style={{display:'grid'}} className="imageCall">
         {" "}
+        <div> 
         <img
           className="imgCallaudio"
-          src="https://i.imgur.com/0I4lkh9.jpg"
+          src="https://media.istockphoto.com/id/1051453470/photo/portrait-of-smiling-businesswoman-looking-at-camera-posing.jpg?s=612x612&w=0&k=20&c=wdsyvVa9X1W3jvV7Wk9yt8SraHYqVMD7iRpQin9NtdM="
         />
-
+ </div>
 
 
 <div  style={{display:'flex'}}  className="iconsCall">    
@@ -29,7 +30,9 @@ const Audiocall = () => {
 
 
   <div  onClick={()=>{SetFil('conv')}}  style={{backgroundColor:'red'}}> <img  style={{height:'20px'}} src={noncall} /></div> 
- </div>
+  </div>
+ 
+
         
 
       </div>
@@ -94,7 +97,7 @@ const Audiocall = () => {
             {" "}
           
             <input   style={{ backgroundColor: "transparent" }} className="sentmsg" placeholder="écrivez ..." />
-            <img className="imgsent" src="https://i.imgur.com/0I4lkh9.jpg" />{" "}
+            {/* <img className="imgsent"  src={Video}  />{" "} */}
           </div>
 
 
