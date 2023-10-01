@@ -107,7 +107,7 @@ position: 'absolute',
         <div className="isepNet" style={{ display: "flex" }}>
             {" "}
           
-            <input   style={{ backgroundColor: "transparent" }} className="sentmsg" placeholder="écrivez ..." />
+            <input   style={{ backgroundColor: "transparent" ,color:'black'}} className="sentmsg" placeholder="écrivez ..." />
             {/* <img className="imgsent" src={Video}  />{" "} */}
           </div>
 

@@ -72,6 +72,8 @@ const Home = () => {
                 ? { backgroundImage: `url(${audioCallFont})` }
                 : Fil === "videocall"
                 ? { backgroundImage: `url(${videocall})` }
+                : Fil === "msg"
+                ? { backgroundImage: `url(${cover})` }
                 
                 : { backgroundImage: `url(${acc})` }
             }
